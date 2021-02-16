@@ -38,25 +38,22 @@ public class MainActivity extends AppCompatActivity {
             //Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01022227777"));
 
 
-
-
-
-
             Intent intent = new Intent(mContext, SubActivity.class);
             // 트럭 속의 데이터를 넘기는 방법
-            //intent.putExtra("username", "ssar");
+
+            // Serializable
             User user = new User();
             user.setId(1);
             user.setUsername("park");
             user.setPassword("1234");
-            intent.putExtra("user",user);
-           
-           /* Bundle bundle = new Bundle();
-            bundle.putSerializable("user",user);
-            intent.putExtras(bundle);
-*/
+            intent.putExtra("user", user);
 
-            startActivityForResult(intent,300);
+            /*// Bundle
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("user", user);
+            intent.putExtra("userBundle", bundle);*/
+
+            startActivityForResult(intent, 300);
         });
     }
 
@@ -71,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "resultCode: " + resultCode);
 
         // Window가 무엇인지 알고 Toast와 Snackbar의 차이를 알 수 있다.
-        if(requestCode == 300) { // SubActivity에서 회귀 했을경우
-            if(resultCode == 1){ // 로직이 성공
+        if (requestCode == 300) { // SubActivity에서 회귀 했을경우
+            if (resultCode == 1) { // 로직이 성공
                 //Toast.makeText(mContext, "인증 성공함 : " +data.getStringExtra("auth"), Toast.LENGTH_SHORT).show();
-                Snackbar.make(mainLayout,"인증성공", BaseTransientBottomBar.LENGTH_LONG).show();
+                Snackbar.make(mainLayout, "인증성공", BaseTransientBottomBar.LENGTH_LONG).show();
             } else { // 로직 실패
                 Toast.makeText(mContext, "인증 실패", Toast.LENGTH_SHORT).show();
             }

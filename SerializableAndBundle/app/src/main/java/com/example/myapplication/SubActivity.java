@@ -19,26 +19,15 @@ public class SubActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub);
-
-       /* // 트럭으로 넘어온 데이터를 받는 방법.
-        Intent intent = getIntent();
-        //데이터를 뿌려준다.
-        String username = intent.getStringExtra("username");
-        Log.d(TAG, "username: " + username);*/
-
-       /* Intent intent = getIntent();
-        Bundle bundle = intent.getBundleExtra("user");*/
-
+/*
+       Intent intent = getIntent();
+       Bundle bundle = intent.getBundleExtra("userBundle");
+       Log.d(TAG, "bundle: " + bundle.get("user"));
+*/
+       // Serializable
        Intent intent = getIntent();
        User user = (User) intent.getSerializableExtra("user");
-       Log.d(TAG, "user: " + user.getUsername());
-
-        /*String usernanme = bundle.getString("username");
-        String password = bundle.getString("password");
-        Log.d(TAG, "password: " + password);
-        Log.d(TAG, "username: " + usernanme);
-        Log.d(TAG, "bundle: " + bundle);
-        Log.d(TAG, "onCreate: ");*/
+       Log.d(TAG, "user: " + user);
 
 
         fabPop = findViewById(R.id.fab_pop);
