@@ -7,17 +7,13 @@
     tools:context=".MainActivity">
 
 
-    <info.androidhive.fontawesome.FontTextView
-        android:id="@+id/ftv"
+    <ImageView
+        android:id="@+id/iv_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="252dp"
-        android:text="@string/fa_heart"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:solid_icon="false" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.network;
+package com.example.fontawesome;
 
 import org.junit.Test;
 
