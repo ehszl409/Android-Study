@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "875821559083",
+    "project_id": "mac-androidapp",
+    "storage_bucket": "mac-androidapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875821559083:android:bdf2542daecee81e31e96e",
+        "android_client_info": {
+          "package_name": "com.example.firestore01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875821559083-i8lbheidqtg5p9rhbak32n75m6k2r3tc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firestore01",
+            "certificate_hash": "e12ce9300aa09f9588ae98001a6e1611204a41dc"
+          }
+        },
+        {
+          "client_id": "875821559083-voermb5svv3m8lre7afn71taqkce7l8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYbYrSxO2kW8OgQGwBpLDAqz5rH08zA5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875821559083-voermb5svv3m8lre7afn71taqkce7l8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
